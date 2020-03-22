@@ -1,0 +1,87 @@
+from random import seed, randint
+from random import random
+
+
+# variables
+user_hand_count   = 0
+dealer_hand_count = 0
+does_want_another_card = True
+
+
+# create the deck
+def create_deck():
+	deck = []  # make a container / makes a list
+
+	# for loop for hearts
+	for x in range(2, 11):
+		suit_string = "hearts"
+		num_str = str(x)
+		deck.append((suit_string, num_str, x))
+
+	deck.append(("hearts", "jack", 10))
+	deck.append(("hearts”, “queen", 10))
+	deck.append(("hearts", "king", 10))
+	deck.append(("hearts", "ace", 1))
+
+	# for loop for diamonds
+	for d in range(2, 11):
+		suit_str = "diamond"
+		num_str = str(d)
+		deck.append( (suit_str, num_str, d) )
+
+	deck.append(("diamond", "jack", 10))
+	deck.append(("diamond”, “queen", 10))
+	deck.append(("diamond", "king", 10))
+	deck.append(("diamond", "ace", 1))
+
+	# for loop for cloves
+	for num in range(2, 11):
+		suit_string = "cloves"
+		num_str = str(num)
+		deck.append( (suit_string, num_str, num) )
+
+	deck.append(("cloves", "jack", 10))
+	deck.append(("cloves”, “queen", 10))
+	deck.append(("cloves", "king", 10))
+	deck.append(("cloves", "ace", 1))
+
+	# for loop for spades
+	for x in range(2, 11):
+		suit_string = "spades"
+		num_str = str(x)
+		deck.append((suit_string, num_str, x))
+
+	deck.append(("spades", "jack", 10))
+	deck.append(("spades”, “queen", 10))
+	deck.append(("spades", "king", 10))
+	deck.append(("spades", "ace", 1))
+
+	return deck
+
+
+def get_random_card(deck):
+	seed(1)
+	index = randint(0, len(deck) - 1)
+	card = deck[index]
+
+	# return that card
+	return card
+
+deck  = create_deck()
+
+# print out the deck please.
+#for card in deck:
+#	print(card)
+
+
+while( user_hand_count < 21 and does_want_another_card ):
+	card = get_random_card(deck)
+	user_hand_count = card[2]
+	print("user_hand_count : ", user_hand_count)
+	print()
+	user_input = input("Play again ( y for yes" )
+	if(user_input != 'y'):
+		does_want_another_card = False
+
+print("Program is over")
+
