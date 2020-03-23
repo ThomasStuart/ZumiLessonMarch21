@@ -1,0 +1,71 @@
+from random import seed, randint
+
+def create_deck():
+    deck = []  # create the list
+
+    # create the diamonds cards 1-10 with a for loop  (amrutha)
+    for index in range(1, 11):
+        deck.append( ( "diamonds", str(index), index)  )
+
+    deck.append(("diamonds", 'A', 1))
+    deck.append(("diamonds", 'J', 11))
+    deck.append(("diamonds", 'Q', 11))
+    deck.append(("diamonds", 'K', 11))
+
+    # create the spades cards 1-10 with a for loop  (johnavon)
+    for index in range(1, 11):
+        deck.append(("spades", str(index), index)  )
+
+    deck.append(("spades", 'A', 1))
+    deck.append(("spades", 'Q', 11))
+    deck.append(("spades", 'K', 11))
+
+    # create the clubs cards 1-10 with a for loop  (Jaeden)
+    for index in range(1, 11):
+        deck.append( ("clubs", str(index), index)  )
+
+    deck.append(("clubs", 'A', 1))
+    deck.append(("clubs", 'J', 11))
+    deck.append(("clubs", 'Q', 11))
+    deck.append(("clubs", 'K', 11))
+
+    # create the hearts cards 1-10 with a for loop  (Bryan)
+    for index in range(1, 11):
+        deck.append(("hearts", str(index), index) )
+
+    deck.append(("hearts", 'A', 1))
+    deck.append(("hearts", 'J', 11))
+    deck.append(("hearts", 'Q', 11))
+    deck.append(("hearts", 'K', 11))
+    return deck
+
+
+
+def get_rand_card(deck):
+    seed(1)
+    index = randint(0, len(deck)-1)
+    return  deck[index]
+
+
+# How do you call “create_deck” in one line?  And store it in ??
+# set the list named “deck” equal to whatever “create_deck()” returns
+deck = create_deck()
+user_hand_count   = 0
+dealer_hand_count = 0
+does_want_another_card = True
+
+#for card in deck:
+#    print(card)
+
+
+while( user_hand_count < 21 and does_want_another_card ):
+
+    card = get_rand_card(deck)
+    print("Dealt card: ", card)
+    print()
+
+    user_input = input("Want another card ( y for Yes, anything else for No)")
+    if (user_input != 'y'):
+        does_want_another_card = False
+
+print("Program is over")
