@@ -23,7 +23,7 @@ Todays Lesson: <br/>
  <br/>
  <br/>
  
- Since we did not finish, your HW is to complete the code found in the file "code"
+ Since we did not finish, your HW is to complete the code.
  Email me at: tjstuart@ucsd.edu   if you run into problems 
  <br/>
  <br/>
