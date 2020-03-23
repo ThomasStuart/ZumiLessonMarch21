@@ -9,15 +9,16 @@ Todays Lesson: <br/>
  
   Collaborative doc design (Riana, Jason, Richardson ): 
   https://docs.google.com/document/d/1JTFVJ0GV3kE88r2ITz-KW8NQzulWey1YTiuwjly6Mt8/edit
-  Your code is in the *codeEveningClass*. It is where we stopped in class 
+   <br/>
+ Your code is in the **codeEveningClass**. It is where we stopped in class 
   
   <br/>
   <br/>
    
   Collaborative doc design (Amrutha, Johnavin, Jaden, Bryan): 
   https://docs.google.com/document/d/1ij7wnAH1Di1lq1fRccbITAdkOdAhkd8SLNh9QM5zX-M/edit
-  
-  Your code is in the *codeEveningClass*. It is where we stopped in class 
+   <br/>
+  Your code is in the **codeEveningClass**. It is where we stopped in class 
 
  <br/>
  <br/>
